@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASS 카스 브랜드 웹사이트</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="topmenu">
+            <div class="list">
+                <img src="images/btn_menu.png" alt="">
+            </div>
+
+            <div class="sns">
+                <img src="images/ico_fb.png" alt="">
+                <img src="images/ico_ins.png" alt="">
+                <img src="images/ico_tw.png" alt="">
+                <img src="images/ico_yt.png" alt="">
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+        </div>
+
+
+    </header>
+    <section>
+        <div class="container">
+            <div class="forCarousel pos-relative">
+                <div class="slides">
+                    <div class="slide">
+                        <a href="/product" title="" target="_blank">
+                            <img src="images/summer_poster_1920x1080_1.jpg" alt="">
+                        </a>
+                        <span class="material-symbols-outlined" >arrow_back_ios </span>
+                    </div>
+                    <div class="slide">
+                        <a href="/product" title="" target="_blank">
+                            <img src="images/pc_main_01_01_0.jpg" alt="">
+                            </a>
+                    </div>
+                    <div class="slide">
+                        <a href="/product" title="" target="_blank">
+                            <img src="images/timetobereal_yoon.jpg" alt="">
+                            </a>
+                            <span class="material-symbols-outlined">arrow_forward_ios</span>
+                    </div>
+                </div>
+                <div class="pager pos-absolute">
+                    <a class="first pagerOn" href="#"><span>1</span></a> <a class = "second" href="#"><span>2</span></a> <a class="third"
+                        href="#"><span>3</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p class="logo_f"><img src="images/logo03.png" alt="Cass"></p>
+        <p class="copyright">
+            <span>Cass | 2021. ⓒ All Rights Reserved. | <a href="javascript:void(0);"
+                    onclick="javascript:$('.pop_policy').show();" class="click-btn-privacy">Privacy Policy</a></span>
+            <span><br class="mob"><a href="javascript:void(0);" onclick="javascript:$('.pop_termsService').show();"
+                    class="click-btn-termsService"> | Terms and Conditions</a></span>
+        </p>
+        <p class="contact">
+            부서명 : 정보전략팀 | 책임자 : 박찬주 CISO(Chief Information Security Officer)<br>전화번호 : <a
+                href="tel:+82 02-2149-5000">(02)2149-5000</a> | 이메일 : <a href="mailto:privacy@ob.co.kr"
+                class="click-btn-email">privacy@ob.co.kr</a>
+            <br>사업자등록번호 : 126-81-32671
+        </p>
+        <p class="warning">
+            경고: 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다. <br class="mob">임신 중 음주는 기형아 출생 위험을 높입니다. 만 19세 미만 컨텐츠 공유 금지.
+        </p>
+    </footer>
+    </div>
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            const FIRST = document.querySelector(".first");
+            const SECOND = document.querySelector(".second");
+            const THIRD = document.querySelector(".third");
+
+            const SLIDES = document.querySelector(".slides");
+            let cont=0;
+
+            FIRST.addEventListener("click", function(e){
+                console.log(e);
+                e.preventDefault();
+                SLIDES.style.marginLeft = "0px"
+                FIRST.classList.add("pagerOn");
+                SECOND.classList.remove("pagerOn");
+                THIRD.classList.remove("pagerOn");
+                cont= 0;
+            })
+            
+            SECOND.addEventListener("click", function(e){
+                e.preventDefault();
+                SLIDES.style.marginLeft = "-1920px"
+                FIRST.classList.remove("pagerOn");
+                SECOND.classList.add("pagerOn");
+                THIRD.classList.remove("pagerOn");
+                cont= 1;
+            })
+            
+            THIRD.addEventListener("click", function(e){
+                e.preventDefault();
+                console.dir(e)
+                SLIDES.style.marginLeft = -1920*2+"px"
+                FIRST.classList.remove("pagerOn");
+                SECOND.classList.remove("pagerOn");
+                THIRD.classList.add("pagerOn");
+                cont= 2;
+            })
+
+        })
+    </script>
+</body>
+
+</html>

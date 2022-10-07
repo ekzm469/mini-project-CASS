@@ -16,9 +16,30 @@
 
 <body>
     <header>
+        <div class="gnb d-none pos-absolute">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="BrandStory.html">BrandStory</a>
+                            </li>
+                            <li>
+                                <a href="FreshTaste.html">FreshTaste</a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
         <div class="topmenu">
             <div class="list">
+                <div class="btn">
                 <img src="images/btn_menu.png" alt="">
+            </div>
+                
             </div>
 
             <div class="sns">
@@ -120,7 +141,19 @@
                 cont= 2;
             })
 
+      
+
         })
+      $(function(){
+                $(".btn").click(function(){
+                    $(".gnb").toggleClass("d-none");
+                })
+
+
+
+
+            })
+
     </script>
 </body>
 

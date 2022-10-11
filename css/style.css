@@ -174,7 +174,7 @@ body{
         
     }
     .pattern{
-        background-image: url("../images/pattern.jpg");
+        background-image: url("..../images/pattern.jpg");
         padding: 135px;
     }
     .container{
@@ -378,7 +378,7 @@ body{
         left: calc(50% - 60px);
         border-radius: 0;
         border: none;
-        background: url(/images/brandstory-icon.png) 50% 0 no-repeat;
+        background: url(../images/brandstory-icon.png) 50% 0 no-repeat;
     }
     
     .contact {
@@ -421,19 +421,19 @@ body{
     }
     
     .user-wrap ul li:nth-child(1) {
-        background-image: url(/images/taste01.png);
+        background-image: url(../images/taste01.png);
     }
     
     .user-wrap ul li:nth-child(2) {
-        background-image: url(/images/taste02.png);
+        background-image: url(../images/taste02.png);
     }
     
     .user-wrap ul li:nth-child(3) {
-        background-image: url(/images/taste03.png);
+        background-image: url(../images/taste03.png);
     }
     
     .user-wrap ul li:nth-child(4) {
-        background-image: url(/images/taste04.png);
+        background-image: url(../images/taste04.png);
     }
     
     .user-wrap ul li {
@@ -489,7 +489,7 @@ body{
     }
     
     .pattern {
-        background: url(/images/pattern.jpg) center 0;
+        background: url(../images/pattern.jpg) center 0;
     }
     
     .tit_h2 {
@@ -506,7 +506,7 @@ body{
     
     .product .cassfresh {
         margin: 0 auto 100px;
-        background: url(/images/product-bg02-cassFresh-pc.png) no-repeat;
+        background: url(../images/product-bg02-cassFresh-pc.png) no-repeat;
     }
     
     .product .cassfresh, .product .casslight {
@@ -574,7 +574,7 @@ body{
         box-sizing: border-box;
         margin: 0 auto 100px;
         padding: 150px 0 190px 128px;
-        background: url(/images/product-bg03-pc.png) no-repeat;
+        background: url(../images/product-bg03-pc.png) no-repeat;
     }
     
     .product .casszero .product-txt {
@@ -608,7 +608,7 @@ body{
     
     .product .casslight {
         margin: 0 auto;
-        background: url(/images/product-bg-cassLight-pc.png) no-repeat;
+        background: url(../images/product-bg-cassLight-pc.png) no-repeat;
     }
     
     .product .cassfresh, .product .casslight {
